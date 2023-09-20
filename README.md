@@ -9,7 +9,7 @@ The final piece of the puzzle for standalone armor, item sorting, and more.
 4. Extract all three files (`TagProductTool.exe`, `byml-to-yaml.exe`, `zs.zsdic`) into the same folder.
 
 ### GUI Usage
-1. Either run TagProductTool.exe or drag a byml or json on it.
+1. Either run `TagProductTool.exe`, or drag a byml, byml.zs or json on it.
 2. Select the output folder.
 
 ### CMD Usage
