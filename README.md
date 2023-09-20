@@ -10,7 +10,7 @@ The final piece of the puzzle for standalone armor, item sorting, and more.
 
 ### GUI Usage
 1. Either run `TagProductTool.exe`, or drag a byml, byml.zs or json on it.
-2. Select the output folder.
+2. Select an output folder.
 
 ### CMD Usage
 `TagProductTool.exe INPUT_FILE OUTPUT_PATH`
