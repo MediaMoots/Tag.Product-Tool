@@ -1,5 +1,5 @@
 # Tag.Product Tool
-The final peice of the puzzle for standalone armor, item sorting, and more.
+The final piece of the puzzle for standalone armor, item sorting, and more.
 
 ## Usage
 ### Setup
