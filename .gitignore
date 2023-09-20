@@ -1,0 +1,6 @@
+*.exe
+*.spec
+*.spec
+*.zsdic
+*dist
+*build
