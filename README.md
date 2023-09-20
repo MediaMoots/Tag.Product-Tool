@@ -15,6 +15,7 @@
 `TagProductTool.exe INPUT_FILE OUTPUT_PATH`
 
 # Notes
+The release executable was made with pyinstaller https://pypi.org/project/pyinstaller/
 #### Special Thanks
 - https://github.com/TotkMods/oead
 - https://github.com/ArchLeaders/byml_to_yaml
