@@ -1,11 +1,12 @@
 # Tag.Product Tool
+The final peice of the puzzle for standalone armor, item sorting, and more.
 
 ## Usage
 ### Setup
 1. Download the latest Tag.Product-Tool relase.
 2. Download https://github.com/ArchLeaders/byml_to_yaml/releases/tag/1.0.0-rc1
 3. Dump your zs.dict
-4. Extract all three files into the same folder.
+4. Extract all three files (TagProductTool.exe, byml-to-yaml.exe, zs.zsdic) into the same folder.
 
 ### GUI Usage
 1. Either run TagProductTool.exe or drag a byml or json on it.
