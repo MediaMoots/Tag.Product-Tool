@@ -8,7 +8,7 @@ Either run TagProductTool.exe or drag a byml or json on it.
 Select the output folder.
 
 ### CMD Version
-TagProductTool.exe INPUT_FILE OUTPUT_PATH
+`TagProductTool.exe INPUT_FILE OUTPUT_PATH`
 
 #### Special Thanks
 https://github.com/TotkMods/oead
