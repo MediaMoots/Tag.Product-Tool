@@ -11,5 +11,5 @@ Select the output folder.
 `TagProductTool.exe INPUT_FILE OUTPUT_PATH`
 
 #### Special Thanks
-https://github.com/TotkMods/oead
-https://github.com/ArchLeaders/byml_to_yaml
+- https://github.com/TotkMods/oead
+- https://github.com/ArchLeaders/byml_to_yaml
