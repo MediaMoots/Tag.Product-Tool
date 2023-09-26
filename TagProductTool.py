@@ -11,6 +11,8 @@ import subprocess
 from bitarray import bitarray
 from tkinter import filedialog as fd
 
+## pyinstaller TagProductTool.py --onefile
+
 ## Program Functions
 def get_script_path():
     if getattr(sys, 'frozen', False):
@@ -31,8 +33,8 @@ def initialize_needed_file_paths():
         sys.exit()
 
     ## Output directory   
-    if len(sys.argv) > 3:
-        output_path = sys.argv[3]
+    if len(sys.argv) > 2:
+        output_path = sys.argv[2]
     else:
         output_path = fd.askdirectory(title="Output folder...")
         
@@ -209,7 +211,7 @@ def byml_to_json_bytes(file_name, byml_file_bytes, output_path):
     json_data['FileName'] = file_name
     json_data['ActorTagData'] = actor_tag_data_map
     json_data['CachedTagList'] = tag_list
-    json_data['CachedRankTable'] = bytes(rank_table).hex() # Save the ranktable for future use
+    json_data['CachedRankTable'] = bytes(rank_table).hex() if rank_table != '' else '' # Save the ranktable for future use
 
     # Return dumped data
     json_output_path = os.path.join(output_path, f'{file_name}.json')
@@ -260,6 +262,7 @@ def json_to_yml_str(file_name, json_file_data, output_path):
     
     # Get Tag list
     cached_tag_list = json_data['CachedTagList']
+    cached_tag_list.sort()
     
     # Get Rank Table
     cached_rank_table = json_data['CachedRankTable']
