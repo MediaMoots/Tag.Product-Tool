@@ -319,7 +319,10 @@ def yml_to_byml_bytes(yml_file_path):
     print('INFO: Converting yml to byml.')
     
     # Get tool path
-    byml_tool_path = os.path.join(get_script_path(), 'byml-to-yaml.exe')
+    if os.name == 'nt':  # Windows
+        byml_tool_path = os.path.join(get_script_path(), 'byml-to-yaml.exe')
+    else:  # Linux and macOS
+        byml_tool_path = os.path.join(get_script_path(), "byml-to-yaml")
     
     # Check if zs dict exists
     if not os.path.isfile(byml_tool_path):
